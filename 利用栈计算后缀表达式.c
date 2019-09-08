@@ -65,10 +65,10 @@ void figure(char d[], stack* q ,int n)
 	int f, s;  //出栈运算数据
 	for (i = 0; i < n; ++i)
 	{
-		if (d[i] >= '0' && d[i] <= '9')
+		if (d[i] >= '0' && d[i] <= '9') 
 		{
-			temp = d[i] - '0';
-			instack(q, temp);
+			temp = d[i] - '0';                        //判断是数字还是操作符 如果是数 则进栈    
+			instack(q, temp);						  //如果是操作符 出两个数据 进行计算 结果入栈
 		}
 		if (d[i] == '+' || d[i] == '-' || d[i] == '*' || d[i] == '/')
 		{
