@@ -5,7 +5,7 @@ void fun(int aa[][16],int yy)
 {
 	int i = 0;
 	int j = 0;
-	for (i = 0; i < 3; i++)
+	for (i = 0; i < yy; i++)
 	{
 		for (int k = i; k < yy-i; k++)
 		{
